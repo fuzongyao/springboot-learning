@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springboot-learning</artifactId>
+        <groupId>cn.fuzongyao.learning</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springboot-002-properties-migrator</artifactId>
+
+    <dependencies>
+        <!-- 在 Spring Boot 2.0 中，许多配置属性已被重命名或被删除，相应地，开发者需要升级他们的 application.properties/application.yml。
+        为了方便升级，Spring Boot 发布了一个新的 spring-boot-properties-migrator 模块。只要将其作为依赖添加到项目中，
+        它不仅会分析应用程序的环境并在启动时打印诊断信息，而且还会在运行时为项目临时迁移属性。在您的应用程序迁移期间，这个模块是必备的 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-properties-migrator</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+</project>

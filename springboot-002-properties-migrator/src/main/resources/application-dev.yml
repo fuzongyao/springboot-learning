@@ -1,0 +1,4 @@
+server:
+  port: 8082
+  # 1.x 版本的写法，2.0+改为 server.servlet.context-path=/migrator
+  context-path: /migrator
