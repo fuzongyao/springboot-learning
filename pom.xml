@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.fuzongyao.learning</groupId>
+    <artifactId>springboot-learning</artifactId>
+    <version>${revision}</version>
+    <modules>
+        <module>springboot-001-helloworld</module>
+        <module>springboot-002-properties-migrator</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <!-- 不是每个人都喜欢从spring-boot-starter-parentPOM 继承。您可能拥有自己需要使用的公司标准父级，或者您可能更愿意明确声明所有Maven配置。
+    如果您不想使用spring-boot-starter-parent，您仍然可以通过使用scope=import依赖项来保持依赖项管理（但不是插件管理）的好处。
+    具体操作：开放下面 dependencyManagement 的 spring-boot-dependencies 注释-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.7.RELEASE</version>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <revision>1.0-SNAPSHOT</revision>
+        <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--<dependency>
+                &lt;!&ndash; Import dependency management from Spring Boot &ndash;&gt;
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.1.7.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>-->
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox-swagger2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${springfox-swagger2.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
