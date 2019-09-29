@@ -15,11 +15,16 @@
 
     <!-- 不是每个人都喜欢从spring-boot-starter-parentPOM 继承。您可能拥有自己需要使用的公司标准父级，或者您可能更愿意明确声明所有Maven配置。
     如果您不想使用spring-boot-starter-parent，您仍然可以通过使用scope=import依赖项来保持依赖项管理（但不是插件管理）的好处。
-    具体操作：开放下面 dependencyManagement 的 spring-boot-dependencies 注释-->
+    具体操作：开放下面 dependencyManagement 的 spring-boot-dependencies 注释。
+    通过继承这种方式，还可以通过覆盖自己项目中的属性来覆盖单个依赖项。例如，要升级到另一个Spring Data版本系列，您需要将以下内容添加到pom.xml：
+    <properties>
+        <spring-data-releasetrain.version>Fowler-SR2</spring-data-releasetrain.version>
+    </properties>
+    -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.7.RELEASE</version>
+        <version>2.1.8.RELEASE</version>
     </parent>
 
     <properties>
@@ -36,7 +41,7 @@
                 &lt;!&ndash; Import dependency management from Spring Boot &ndash;&gt;
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.1.7.RELEASE</version>
+                <version>2.1.8.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>-->
