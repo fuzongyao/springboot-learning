@@ -11,6 +11,7 @@
         <module>springboot-001-helloworld</module>
         <module>springboot-002-properties-migrator</module>
         <module>springboot-003-enum-param</module>
+        <module>springboot-004-scheduled</module>
     </modules>
     <packaging>pom</packaging>
 
