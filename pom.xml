@@ -13,6 +13,7 @@
         <module>springboot-003-enum-param</module>
         <module>springboot-004-scheduled</module>
         <module>springboot-005-logback</module>
+        <module>springboot-006-aop-log</module>
     </modules>
     <packaging>pom</packaging>
 
