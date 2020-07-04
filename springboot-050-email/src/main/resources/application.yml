@@ -1,6 +1,6 @@
 spring.mail:
   host: smtp.qq.com
-  username: fuzongyao.java@qq.com
+  username: 你的邮箱
   # 你的QQ邮箱第三方授权码
-  password: wleliiwdlzmofhdi
+  password: 你的密码
   default-encoding: UTF-8
