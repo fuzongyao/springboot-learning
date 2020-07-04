@@ -5,17 +5,16 @@
     <parent>
         <artifactId>springboot-learning</artifactId>
         <groupId>cn.fuzongyao.learning</groupId>
-        <version>${revision}</version>
+        <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springboot-003-enum-param</artifactId>
+    <artifactId>springboot-009-websocket</artifactId>
 
     <dependencies>
         <dependency>
-            <!-- v2.3.0.M1后不在默认引入，需要手动引入 -->
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-validation</artifactId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
         </dependency>
     </dependencies>
 

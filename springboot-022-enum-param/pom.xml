@@ -9,14 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springboot-003-enum-param</artifactId>
+    <artifactId>springboot-022-enum-param</artifactId>
 
-    <dependencies>
-        <dependency>
-            <!-- v2.3.0.M1后不在默认引入，需要手动引入 -->
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-validation</artifactId>
-        </dependency>
-    </dependencies>
 
 </project>

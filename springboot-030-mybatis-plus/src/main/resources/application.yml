@@ -1,0 +1,16 @@
+spring:
+  profiles.active: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/common?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis-plus:
+  global-config:
+    db-config:
+      dbType: mysql
+      logic-delete-value: true
+      logic-not-delete-value: false
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

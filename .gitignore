@@ -1,5 +1,6 @@
 # maven #
 target
+.factorypath
 
 logs
 
@@ -44,3 +45,5 @@ integration-repo
 /webapp/WEB-INF/test-classes/
 /webapp/WEB-INF/target/
 
+# vscode #
+.vscode
