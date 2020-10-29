@@ -49,6 +49,12 @@ public class AddressController {
         return userDO;
     }
 
+    @PostMapping("saveTransactional")
+    public AddressDO save(AddressDO userDO) {
+        addressService.save();
+        return userDO;
+    }
+
     @PostMapping("save")
     public String save() {
         long timeMillis = System.currentTimeMillis();
