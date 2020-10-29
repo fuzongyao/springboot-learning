@@ -5,11 +5,11 @@
     <parent>
         <artifactId>springboot-learning</artifactId>
         <groupId>cn.fuzongyao.learning</groupId>
-        <version>${revision}</version>
+        <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springboot-030-mybatis-plus</artifactId>
+    <artifactId>springboot-031-flyway</artifactId>
 
     <dependencies>
         <dependency>
@@ -20,6 +20,10 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
         </dependency>
     </dependencies>
 

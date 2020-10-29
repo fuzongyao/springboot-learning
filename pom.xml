@@ -19,6 +19,7 @@
         <module>springboot-030-mybatis-plus</module>
         <module>springboot-022-enum-param</module>
         <module>springboot-050-email</module>
+        <module>springboot-031-flyway</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -33,7 +34,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.1.RELEASE</version>
+        <version>2.3.4.RELEASE</version>
     </parent>
 
     <properties>
@@ -45,20 +46,11 @@
         <maven.compiler.target>11</maven.compiler.target>
         <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
         <lombok.version>1.18.12</lombok.version>
+        <httpclient.version>4.5.9</httpclient.version>
+        <jsoup.version>1.9.2</jsoup.version>
+        <mybatis-plus.version>3.4.0</mybatis-plus.version>
+        <flyway.version>6.5.7</flyway.version>
     </properties>
-
-    <dependencyManagement>
-        <dependencies>
-            <!--<dependency>
-                &lt;!&ndash; Import dependency management from Spring Boot &ndash;&gt;
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.3.1.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>-->
-        </dependencies>
-    </dependencyManagement>
 
     <dependencies>
         <dependency>
@@ -96,6 +88,43 @@
             <version>${springfox-swagger2.version}</version>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--<dependency>
+                &lt;!&ndash; Import dependency management from Spring Boot &ndash;&gt;
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.3.1.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>-->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jsoup</groupId>
+                <artifactId>jsoup</artifactId>
+                <version>${jsoup.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-jdbc</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-core</artifactId>
+                <version>${flyway.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
