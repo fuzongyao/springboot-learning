@@ -20,6 +20,7 @@
         <module>springboot-022-enum-param</module>
         <module>springboot-050-email</module>
         <module>springboot-031-flyway</module>
+        <module>springboot-032-transactiona-mysql</module>
     </modules>
     <packaging>pom</packaging>
 

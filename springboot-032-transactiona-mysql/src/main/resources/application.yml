@@ -1,0 +1,16 @@
+spring:
+  profiles.active: dev
+  datasource:
+    url: jdbc:mysql://47.107.153.204:3306/learning?characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true&&serverTimezone=GMT%2B8
+    username: learning
+    password: 5g#22clTSM
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis-plus:
+  global-config:
+    db-config:
+      dbType: mysql
+      logic-delete-value: true
+      logic-not-delete-value: false
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
