@@ -48,7 +48,7 @@
         <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
         <lombok.version>1.18.12</lombok.version>
         <httpclient.version>4.5.9</httpclient.version>
-        <jsoup.version>1.9.2</jsoup.version>
+        <jsoup.version>1.14.2</jsoup.version>
         <mybatis-plus.version>3.4.0</mybatis-plus.version>
         <flyway.version>6.5.7</flyway.version>
     </properties>
